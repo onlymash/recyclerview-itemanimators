@@ -58,7 +58,7 @@ abstract class BaseItemAnimator<T> : SimpleItemAnimator() {
     /**
      * @return the interpolator used for the animations
      */
-    lateinit var interpolator: Interpolator
+    var interpolator: Interpolator? = null
         internal set
 
     private class MoveInfo (var holder: RecyclerView.ViewHolder, var fromX: Int, var fromY: Int, var toX: Int, var toY: Int)
